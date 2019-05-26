@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>945</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>945</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="open_action"/>
+    <addaction name="erase_action"/>
+    <addaction name="close_action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="firm_param_action"/>
+    <addaction name="folders_action"/>
+    <addaction name="drugdilers_action"/>
+    <addaction name="find_first_action"/>
+    <addaction name="separator"/>
+    <addaction name="action_open_settings_folder"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="about_action"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="close_action">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="about_action">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="open_action">
+   <property name="text">
+    <string>Открыть Файл</string>
+   </property>
+  </action>
+  <action name="erase_action">
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </action>
+  <action name="firm_param_action">
+   <property name="text">
+    <string>Параметры фирм</string>
+   </property>
+  </action>
+  <action name="folders_action">
+   <property name="text">
+    <string>Настройка папок</string>
+   </property>
+  </action>
+  <action name="drugdilers_action">
+   <property name="text">
+    <string>Настройка фармоцевтов</string>
+   </property>
+  </action>
+  <action name="find_first_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Поиск с начала строки</string>
+   </property>
+  </action>
+  <action name="action_clear_index">
+   <property name="text">
+    <string>Сбросить индексы</string>
+   </property>
+  </action>
+  <action name="action_open_settings_folder">
+   <property name="text">
+    <string>Открыть папку с файлом настроек</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
